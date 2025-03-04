@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "baijam";
+    src: url(fontes/fonte-texto/BaiJamjuree-Medium.ttf)
+}
+@font-face {
+    font-family: "orbitron";
+    src: url(fontes/fonte-titulo/Orbitron-VariableFont_wght.ttf);
+}
+@keyframes glitch{
+    0% { text-shadow: 2px 2px red;}
+    50% { text-shadow: -2px -2px rgb(43, 43, 255);}
+    100% { text-shadow: 2px 2px red;}
+}
+@keyframes textcoloranimation{
+    100% { color: white;}
+}
+body {
+    width: 100%;
+    color: #C0D3E6;
+    font-family: "baijam";
+    background-color: #0A1A2F;
+}
+:root {
+    --bg-color: #0A1A2F; /* Fundo escuro e frio */
+    --primary-color: #123456; /* Azul para menus e botões */
+    --secondary-color: #3A4F6E; /* Cinza azulado para detalhes */
+    --highlight-color: #00AEEF; /* Azul neon para realces */
+    --alert-color: #FF3131; /* Vermelho para alertas e avisos */
+    --text-color: #C0D3E6; /* Texto principal */
+}
+header {
+    background-image: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+    margin-top: -20px;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+header h1{
+    text-align: center;
+    font-family: "orbitron";
+    padding-top: 30px;
+}
+header h1:hover {
+    color: #FF3131;
+    transition-duration: 0.5s;    
+}
+header p {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+nav {
+    margin-top: 20px;
+    background-color: #123456;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-left: -5px;
+    margin-right: -5px;
+    
+}
+nav a{
+    background-color: #123456;
+    padding: 6px;
+    color: #00AEEF;
+    text-decoration: none;
+    font-family: "orbitron";
+    font-weight: bold;
+    border: 1px solid #FF3131;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+nav a:hover {
+    border-color: yellow;
+    transition-duration: 0.5s;
+    padding: 10px;
+}
+main {
+   border: 2px solid rgba(255, 0, 0, 0.582) ;
+   width: 90%;
+   margin: auto;
+   
+   min-width: 300px;
+   padding: 20px;
+   background-color: #0a1a2f9d; 
+}
+
+main h1, h2 {
+    font-family: "orbitron";
+    text-align: center;
+}
+article {
+    border: 1px solid #3A4F6E;
+    padding: 10px;
+    margin: 20px 0px;
+}
+aside {
+    background-color: #123456;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+aside h1 {
+    text-align: center;
+    background-color: #FF3131;
+    margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+    color: black;
+    padding: 4px;
+    animation: textcoloranimation 1s infinite alternate;
+    border-radius: 10px 10px 0px 0px;
+}
+.atencao {
+    animation: glitch 1s infinite alternate;
+}
+ul {
+    list-style-type: none;
+}
+li:hover{
+    background-color: #3A4F6E;
+    max-width: max-content;
+    transition-duration: 0.5s;
+}
+.quadroatencao{
+    background-color: #123456;
+}
+.quadroatencao h1{
+    background-color: #ff313191;
+}
+.quadroatencao p{
+    text-align: center;
+    padding-bottom: 5px;
+}
+footer {
+    background-color: #3A4F6E;
+    text-align: center;
+    font-family: "orbitron";
+    font-weight: bold;    
+}
