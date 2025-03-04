@@ -138,3 +138,7 @@ footer {
     font-family: "orbitron";
     font-weight: bold;    
 }
+article a{
+    text-decoration: none;
+    color: #C0D3E6;
+}
