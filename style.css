@@ -20,6 +20,7 @@ body {
     color: #C0D3E6;
     font-family: "baijam";
     background-color: #0A1A2F;
+    margin: auto;
 }
 :root {
     --bg-color: #0A1A2F; /* Fundo escuro e frio */
@@ -32,8 +33,6 @@ body {
 header {
     background-image: linear-gradient(to top, var(--primary-color), var(--secondary-color));
     margin-top: -20px;
-    margin-right: -5px;
-    margin-left: -5px;
 }
 header h1{
     text-align: center;
@@ -54,9 +53,6 @@ nav {
     background-color: #123456;
     padding: 5px;
     padding-bottom: 20px;
-    margin-left: -5px;
-    margin-right: -5px;
-    
 }
 nav a{
     background-color: #123456;
@@ -70,6 +66,9 @@ nav a{
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 nav a:hover {
     border-color: yellow;
