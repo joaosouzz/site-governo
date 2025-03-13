@@ -9,8 +9,8 @@
 }
 @keyframes backgroundBlink {
     0% { background-color: #0a0a0a; } /* Preto suave */
-    50% { background-color: #001f3f; } /* Azul escuro */
-    100% { background-color: #0a0a0a; } /* Volta para preto */
+    50% { background-color: #e7ff13; } /* Azul escuro */
+    100% { background-color: #ff0000; } /* Volta para preto */
 }
 @keyframes glitch{
     0% { text-shadow: 2px 2px red;}
@@ -30,7 +30,7 @@
 }
 body {
     padding-top: 90px;
-    animation: backgroundBlink 3s infinite alternate;
+    animation: backgroundBlink 0.5s infinite alternate;
     transition: background-color 0.5s ease-in-out;
     color: #000000;
     background-color: #0A1A2F;
